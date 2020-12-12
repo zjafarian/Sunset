@@ -24,16 +24,27 @@
                 android:layout_width="120dp"
                 android:layout_height="120dp"
                 android:src="@drawable/sun"
-                android:layout_gravity="center" />
+                android:layout_gravity="center"
+                android:contentDescription="TODO" />
 
         </FrameLayout>
 
-        <View
+        <FrameLayout
             android:id="@+id/sea"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="33"
-            android:background="@color/sea" />
+            android:background="@color/sea">
+
+            <ImageView
+                android:id="@+id/sun_sea"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:src="@drawable/sun_sea"
+                android:layout_gravity="center" />
+
+
+            </FrameLayout>
 
     </LinearLayout>
 </layout>
